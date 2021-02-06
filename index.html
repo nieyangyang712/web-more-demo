@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            min-height: 88vh;
+            /* width: 100vw; */
+            padding: 5vmin;
+            background: #2a1c3a;
+            background: linear-gradient(135deg, #292929, #000000);
+        }
+        .container{
+            min-height: 85vh;
+            background-color: rgba(54, 54, 54, 0.4);
+            border-radius: 8px;
+            /* padding: 48px; */
+            padding: 10px 48px;
+        }
+        .container h1 {
+            color: #ffffff;
+            margin-bottom: 36px;
+        }
+        .list {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 36px;
+            column-gap: 24px;
+        }
+        ul, li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .list li {
+            background: linear-gradient(135deg, #0061ff, #ff00f2);
+            border-radius: 6px;
+            position: relative;
+        }
+        .list li a {
+            display: block;
+            color: #ffffff;
+            text-shadow: 0 0 2px rgba(180, 124, 117, 0.4);
+            text-decoration: none;
+            text-align: left;
+            font-size: 18px;
+            padding: 18px 24px;
+            text-align: center;
+            margin: 2px;
+            background-color: rgb(24, 24, 24);
+            border-radius: 6px;
+            width: 265px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>HTML CSS 特效</h1>
+            <ul class="list">
+                <li>
+                    <a href="https://github.com/nieyangyang712/web-more-demo/01-china_Subway/index.html">
+                        中国(含香港)地铁地图
+                        <span style="background: rgb(0, 255, 4); border-radius: 4px; font-size: 10px; padding: 6px 4px; color: rgb(0, 0, 0); font-weight: 600; position: absolute; right: -14px; top: -6px;">（NEW!）</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./02-simulation-COVID-19/index.html">全国新型冠状肺炎展示</a>
+                </li>
+                <li>
+                    <a href="./03-3d-cubic-images/index.html">3D立体照片墙</a>
+                </li>
+                <li>
+                    <a href="./04-upload-avatar/index.html">上传(拍照)照片合成</a>
+                </li>
+                <li><a href="./05-website-company/index.html">科技公司官网展示</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
